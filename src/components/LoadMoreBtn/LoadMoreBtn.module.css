@@ -1,0 +1,38 @@
+.loadMoreBtn {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 10px;
+    color:#6d5ed7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loadMoreBtn:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #6d5ed7);
+    transition: left 0.7s linear; 
+}
+
+.loadMoreBtn:hover:before {
+    background: linear-gradient(270deg, #6d5ed7, transparent);
+    left: 100%;
+}
+
+.loadMoreBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+

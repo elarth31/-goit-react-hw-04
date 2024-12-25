@@ -1,0 +1,41 @@
+.errorContainer {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px dashed #646cff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.errorText {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #646cff;
+}
+
+.errorIcon {
+    width: 10em;
+    height: 10em;
+    color: orangered;
+}
+
+@media (max-width: 768px) {
+    .errorContainer {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .errorText {
+        font-size: 1rem;
+    }
+
+    .errorIcon {
+        width: 4em;
+        height: 4em;
+    }
+}
